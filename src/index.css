@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-in-out;
+  }
+  
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-slide-up {
+    animation: slide-up 1s ease-out;
+  }
+
+  
+
+
+
+  /* betting section */
+  .neon-glow {
+    text-shadow: 0 0 8px #ffbf00, 0 0 16px #ff6a00, 0 0 24px #ff4700;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+  }
+  
+ 
+  
+  button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px rgba(255, 100, 50, 0.7);
+  }
+  
+
+
+
+
+
+
+
+  /* promotions */
+  @keyframes slide {
+    0% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 6s infinite linear;
+  }
+  
+  .animate-slide-reverse {
+    animation: slide 6s infinite linear reverse;
+  }
+
+  
+
+
+
+
+  /* leaderboard */
+  .neon-glow {
+    text-shadow: 0 0 10px #ffb300, 0 0 20px #ff6bcb, 0 0 30px #ff6bcb, 0 0 40px #ffe53b;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 10px #ffb300, 0 0 20px #ffb300, 0 0 30px #ff6bcb;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+  
+
+
+
+
+
+
+
+/* Add these to your global CSS file */
+@layer components {
+  .hover\:scale-up:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
